@@ -4,9 +4,10 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import styled from "styled-components";
 
-const HeaderImage = styled.div`
-  position: relative;
+const HeaderImage = styled.img`
   height: 25rem;
+  width: 100%;
+  object-fit: cover;
 `;
 
 const Lift = styled.div`
@@ -15,6 +16,7 @@ const Lift = styled.div`
   color: #f8f7fe;
   font-weight: 600;
   text-align: center;
+  margin-top: -0.5rem;
 `;
 
 const Button = styled.button`
@@ -40,9 +42,11 @@ const Home: NextPage = () => {
 
       <Layout>
         <>
-          <HeaderImage>
-            {/* <img src={require("../public/static/kansikuva.jpg")} /> */}
-          </HeaderImage>
+          <HeaderImage
+            src={require("../public/images/kansikuva.jpg")}
+            alt="kansikuva"
+          />
+
           <Lift>
             <h2>LUUPIN JUHLATILA - BEST THING EVER</h2>
             <p>
