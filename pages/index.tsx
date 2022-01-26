@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import Layout from "../components/layout";
 import styled from "styled-components";
 
@@ -41,12 +41,7 @@ const Home: NextPage = () => {
       <Layout>
         <>
           <HeaderImage>
-            <Image
-              src="/static/kansikuva.jpg"
-              alt=""
-              layout="fill"
-              objectFit="cover"
-            />
+            {/* <img src={require("../public/static/kansikuva.jpg")} /> */}
           </HeaderImage>
           <Lift>
             <h2>LUUPIN JUHLATILA - BEST THING EVER</h2>

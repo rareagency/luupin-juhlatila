@@ -3,13 +3,16 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@types/styled-components": "^5.1.20",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-optipng": "^8.0.0",
     "next": "12.0.8",
+    "next-optimized-images": "^2.6.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "styled-components": "^5.3.3"
