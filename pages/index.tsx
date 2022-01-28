@@ -12,21 +12,21 @@ const HeaderImage = styled.img`
 
 const Lift = styled.div`
   background: #8980f1;
-  padding: 3rem 16rem;
+  padding: 2rem 20%;
   color: #f8f7fe;
   font-weight: 600;
   text-align: center;
   margin-top: -0.5rem;
 `;
 
-const Button = styled.button`
-  background: #474747;
-  border: none;
-  color: #f8f7fe;
-  padding: 1rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+const InfoContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 2rem;
+  button {
+    text-aling: center;
+  }
 `;
 
 const Home: NextPage = () => {
@@ -55,8 +55,21 @@ const Home: NextPage = () => {
               ornare, et suscipit neque mattis. Donec mollis sapien in neque
               sodales congue. Donec dictum id lectus ac malesuada.
             </p>
-            <Button>Tutustu tiloihin</Button>
+            <button>Tutustu tiloihin</button>
           </Lift>
+          <InfoContainer>
+            <div>
+              <p>
+                Järjestä juhlat meillä täällä on kaikki mitä tarvitset! Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare
+                libero vitae mauris ornare, et suscipit neque mattis. Donec
+                mollis sapien in neque sodales congue. Donec dictum id lectus ac
+                malesuada.
+              </p>
+              <button>Varaa tila</button>
+            </div>
+            <p>Facebook contentit</p>
+          </InfoContainer>
         </>
       </Layout>
     </div>

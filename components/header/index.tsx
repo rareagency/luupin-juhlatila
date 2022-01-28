@@ -9,7 +9,10 @@ const HeaderContainer = styled.header`
   font-style: normal;
   display: flex;
   justify-content: space-between;
-  margin: 2rem 3rem;
+  padding: 2rem 3rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
 `;
 
 const NavBar = styled.div`
