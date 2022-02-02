@@ -13,6 +13,7 @@ const HeaderContainer = styled.header`
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 10;
 `;
 
 const NavBar = styled.div`
@@ -28,7 +29,7 @@ const NavBar = styled.div`
 const Header: React.FC = () => {
   return (
     <HeaderContainer>
-      <div>LUUPIN JUHLATILA</div>
+      <div>&pi; -KLUBI</div>
       <NavBar>
         <Link href="/">
           <a>Etusivu</a>

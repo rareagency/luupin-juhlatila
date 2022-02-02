@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Layout from "../components/layout";
 import styled from "styled-components";
+import Script from "next/script";
 
 const HeaderImage = styled.img`
   height: 25rem;
@@ -39,16 +40,23 @@ const Home: NextPage = () => {
         <link rel="stylesheet" href="https://use.typekit.net/mdv6ewv.css" />
         <link rel="stylesheet" href="https://use.typekit.net/mdv6ewv.css" />
       </Head>
-
       <Layout>
         <>
+          <div id="fb-root"></div>
+          <Script
+            async
+            defer
+            crossOrigin="anonymous"
+            src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v12.0"
+            nonce="dfZGdSf3"
+          />
           <HeaderImage
             src={require("../public/images/kansikuva.jpg")}
             alt="kansikuva"
           />
 
           <Lift>
-            <h2>LUUPIN JUHLATILA - BEST THING EVER</h2>
+            <h2>&pi; -KLUBI - BEST THING EVER</h2>
             <p>
               Varaa tästä. Super hyvät diilit! Lorem ipsum dolor sit amet,
               consectetur adipiscing elit. Donec ornare libero vitae mauris
@@ -68,7 +76,24 @@ const Home: NextPage = () => {
               </p>
               <button>Varaa tila</button>
             </div>
-            <p>Facebook contentit</p>
+            <div
+              className="fb-page"
+              data-href="https://www.facebook.com/piiklubi"
+              data-tabs="timeline"
+              data-width="1000"
+              data-height="400"
+              data-small-header="true"
+              data-adapt-container-width="true"
+              data-hide-cover="false"
+              data-show-facepile="false"
+            >
+              <blockquote
+                cite="https://www.facebook.com/piiklubi"
+                className="fb-xfbml-parse-ignore"
+              >
+                <a href="https://www.facebook.com/piiklubi">Pii-Klubi</a>
+              </blockquote>
+            </div>
           </InfoContainer>
         </>
       </Layout>

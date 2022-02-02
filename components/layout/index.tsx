@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import Header from "../header";
+import Footer from "../footer";
 
 const GlobalStyle = createGlobalStyle`
   body, html {
@@ -56,6 +57,7 @@ export default function Layout({ children }: Props) {
       <GlobalStyle />
       <Header />
       <ChildrenContainer> {children} </ChildrenContainer>
+      <Footer />
     </>
   );
 }
