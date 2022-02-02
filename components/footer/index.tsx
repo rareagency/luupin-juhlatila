@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
           Puhelin yms.
         </div>
         <a href="https://www.rare.fi" target="_blank" rel="noreferrer">
-          <Logo src={require("../../public/images/RARE.png")} alt="RARE" />
+          <Logo src={require("../../public/images/rare.png")} alt="RARE" />
         </a>
       </FooterContent>
     </FooterContainer>
