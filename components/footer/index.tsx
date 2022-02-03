@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Link from "next/link";
 import { FacebookSquare, InstagramAlt } from "@styled-icons/boxicons-logos";
 
 const FooterContainer = styled.header`
