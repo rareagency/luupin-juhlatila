@@ -37,7 +37,7 @@ const Header: React.FC = () => {
         <Link href="/hinnasto">
           <a>Hinnasto</a>
         </Link>
-        <Link href="/">
+        <Link href="/tilat">
           <a>Tilat</a>
         </Link>
         <Link href="/">
