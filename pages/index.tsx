@@ -9,6 +9,9 @@ const HeaderImage = styled.img`
   height: 25rem;
   width: 100%;
   object-fit: cover;
+  @media (max-width: 600px) {
+    height: 15rem;
+  }
 `;
 
 const Lift = styled.div`
@@ -18,6 +21,9 @@ const Lift = styled.div`
   font-weight: 600;
   text-align: center;
   margin-top: -0.5rem;
+  @media (max-width: 600px) {
+    padding: 2rem 10%;
+  }
 `;
 
 const Home: NextPage = () => {
