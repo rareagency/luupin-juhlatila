@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 const InfoContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 400px;
+  grid-template-columns: 1fr 500px;
   grid-gap: 2rem;
   justify-items: center;
   padding: 2rem;
@@ -28,9 +28,9 @@ const FrontpageInfo: React.FC = () => {
 
   const setDimension = () => {
     const width = window.innerWidth;
-    if (width < 400) {
+    if (width < 500) {
       getDimension(width - 50);
-    } else getDimension(400);
+    } else getDimension(500);
   };
 
   useEffect(() => {
@@ -57,7 +57,7 @@ const FrontpageInfo: React.FC = () => {
         <button>Varaa tila</button>
       </div>
       <iframe
-        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpiiklubi&tabs=timeline&width=400&height=600&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+        src={`https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpiiklubi&tabs=timeline&width=${screenWidth}&height=600&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId`}
         width={screenWidth}
         height="600"
         style={{ border: "none", overflow: "hidden" }}
