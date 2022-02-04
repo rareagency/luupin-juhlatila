@@ -40,13 +40,13 @@ const Header: React.FC = () => {
         <Link href="/tilat">
           <a>Tilat</a>
         </Link>
-        <Link href="/">
+        <Link href="/varaus">
           <a>Varaus</a>
         </Link>
-        <Link href="/">
+        <Link href="/yhteystiedot">
           <a>Yhteystiedot</a>
         </Link>
-        <Link href="/">
+        <Link href="/varausehdot">
           <a>Varausehdot</a>
         </Link>
       </NavBar>
