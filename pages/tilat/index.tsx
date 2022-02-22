@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Layout from "../../components/layout";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import Link from "next/link";
 
 const BaseGrid = styled.div`
   display: grid;
@@ -100,7 +101,9 @@ const Tilat: NextPage = () => {
             vitae mauris ornare, et suscipit neque mattis. Donec mollis sapien
             in neque sodales congue. Donec dictum id lectus ac malesuada.
           </p>
-          <button>Varaa tila</button>
+          <Link href="/varaus" passHref>
+            <button>Varaa tila</button>
+          </Link>
         </FirstText>
         <SecondCarousel>
           <div>

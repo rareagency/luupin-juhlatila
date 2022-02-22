@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const InfoContainer = styled.div`
   display: grid;
@@ -54,7 +55,9 @@ const FrontpageInfo: React.FC = () => {
           mauris ornare, et suscipit neque mattis. Donec mollis sapien in neque
           sodales congue. Donec dictum id lectus ac malesuada.
         </p>
-        <button>Varaa tila</button>
+        <Link href="/varaus" passHref>
+          <button>Varaa tila</button>
+        </Link>
       </div>
       <iframe
         src={`https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpiiklubi&tabs=timeline&width=${screenWidth}&height=600&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId`}

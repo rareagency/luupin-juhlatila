@@ -4,6 +4,7 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import FrontpageInfo from "../components/frontpageInfo";
 import styled from "styled-components";
+import Link from "next/link";
 
 const HeaderImage = styled.img`
   height: 25rem;
@@ -55,7 +56,9 @@ const Home: NextPage = () => {
               ornare, et suscipit neque mattis. Donec mollis sapien in neque
               sodales congue. Donec dictum id lectus ac malesuada.
             </p>
-            <button>Tutustu tiloihin</button>
+            <Link href="/tilat" passHref>
+              <button>Tutustu tiloihin</button>
+            </Link>
           </Lift>
           <FrontpageInfo />
         </>
