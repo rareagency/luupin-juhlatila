@@ -60,6 +60,9 @@ const LayoutContainer = styled.div`
 
 const ChildrenContainer = styled.div`
   margin-top: 5rem;
+  @media (max-width: 600px) {
+    margin-top: 4rem;
+  }
 `;
 
 type Props = {

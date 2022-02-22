@@ -10,11 +10,15 @@ const HeaderContainer = styled.header`
   font-style: normal;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 2rem 3rem;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 10;
+  @media (max-width: 950px) {
+    padding: 1rem 2rem;
+  }
 `;
 
 const DesktopNav = styled.div`

@@ -28,8 +28,11 @@ const OpenMenu = styled.div`
 
 const Menu = styled(MenuAltRight)`
   color: #474747;
-  height: 2rem;
+  height: 3rem;
   width: auto;
+  @media (max-width: 600px) {
+    height: 2rem;
+  }
 `;
 
 const Close = styled(X)`
