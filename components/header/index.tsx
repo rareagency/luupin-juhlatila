@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Link from "next/link";
+import Navbar from "./navbar";
+import MobileNav from "./mobilenav";
 
 const HeaderContainer = styled.header`
   background: #f7f7fe;
@@ -16,13 +17,9 @@ const HeaderContainer = styled.header`
   z-index: 10;
 `;
 
-const NavBar = styled.div`
-  display: flex;
-  a {
-    margin-right: 2rem;
-  }
-  a:last-child {
-    margin: 0;
+const DesktopNav = styled.div`
+  @media (max-width: 950px) {
+    display: none;
   }
 `;
 
@@ -30,26 +27,10 @@ const Header: React.FC = () => {
   return (
     <HeaderContainer>
       <div>&pi; -KLUBI</div>
-      <NavBar>
-        <Link href="/">
-          <a>Etusivu</a>
-        </Link>
-        <Link href="/hinnasto">
-          <a>Hinnasto</a>
-        </Link>
-        <Link href="/tilat">
-          <a>Tilat</a>
-        </Link>
-        <Link href="/varaus">
-          <a>Varaus</a>
-        </Link>
-        <Link href="/yhteystiedot">
-          <a>Yhteystiedot</a>
-        </Link>
-        <Link href="/varausehdot">
-          <a>Varausehdot</a>
-        </Link>
-      </NavBar>
+      <DesktopNav>
+        <Navbar />
+      </DesktopNav>
+      <MobileNav />
     </HeaderContainer>
   );
 };
