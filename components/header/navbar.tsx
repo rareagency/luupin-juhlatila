@@ -35,6 +35,9 @@ const NavItem = styled.a`
 
   @media (max-width: 950px) {
     margin-right: auto;
+    :last-child {
+      margin-right: auto;
+    }
     padding-top: 3rem;
     font-size: 2rem;
     border-bottom: ${(p: NavItemProps) =>
