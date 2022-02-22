@@ -12,6 +12,16 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     padding: 0;
     margin: 0;
+    height: 100%;
+    @media (min-width: 1500px) {
+      font-size: 1.1rem;
+    }
+    @media (min-width: 2000px) {
+      font-size: 1.2rem;
+    }
+  }
+  #__next {
+    height: 100%;
   }
   h1, h2 {
     font-family: rigid-square, sans-serif;
@@ -39,8 +49,13 @@ const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
+`;
 
-  
+const LayoutContainer = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 const ChildrenContainer = styled.div`
@@ -53,11 +68,11 @@ type Props = {
 
 export default function Layout({ children }: Props) {
   return (
-    <>
+    <LayoutContainer>
       <GlobalStyle />
       <Header />
       <ChildrenContainer> {children} </ChildrenContainer>
       <Footer />
-    </>
+    </LayoutContainer>
   );
 }
