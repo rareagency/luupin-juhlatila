@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
-import Head from "next/head";
 import Layout from "../components/layout";
 import FrontpageInfo from "../components/frontpageInfo";
 import styled from "styled-components";
@@ -30,17 +29,6 @@ const Lift = styled.div`
 const Home: NextPage = () => {
   return (
     <div>
-      <Head>
-        <title>Pii-Klubi</title>
-        <meta
-          name="description"
-          content="Pii-Klubi, juhla- ja saunatila Tampereen keskustassa"
-        />
-        <link rel="icon" href="/favicon.ico" />
-        {/* Fonts: */}
-        <link rel="stylesheet" href="https://use.typekit.net/mdv6ewv.css" />
-        <link rel="stylesheet" href="https://use.typekit.net/mdv6ewv.css" />
-      </Head>
       <Layout>
         <>
           <HeaderImage

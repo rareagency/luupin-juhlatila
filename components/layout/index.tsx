@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import styled, { createGlobalStyle } from "styled-components";
 import Header from "../header";
 import Footer from "../footer";
@@ -71,11 +72,24 @@ type Props = {
 
 export default function Layout({ children }: Props) {
   return (
-    <LayoutContainer>
-      <GlobalStyle />
-      <Header />
-      <ChildrenContainer> {children} </ChildrenContainer>
-      <Footer />
-    </LayoutContainer>
+    <div>
+      <Head>
+        <title>Pii-Klubi</title>
+        <meta
+          name="description"
+          content="Pii-Klubi, juhla- ja saunatila Tampereen keskustassa"
+        />
+        <link rel="icon" href="/favicon.ico" />
+        {/* Fonts: */}
+        <link rel="stylesheet" href="https://use.typekit.net/mdv6ewv.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/mdv6ewv.css" />
+      </Head>
+      <LayoutContainer>
+        <GlobalStyle />
+        <Header />
+        <ChildrenContainer> {children} </ChildrenContainer>
+        <Footer />
+      </LayoutContainer>
+    </div>
   );
 }
