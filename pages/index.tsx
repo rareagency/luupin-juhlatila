@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import FrontpageInfo from "../components/frontpageInfo";
 import styled from "styled-components";
 import Link from "next/link";
+import Kansikuva from "../public/images/kansikuva.jpg";
 
 const HeaderImage = styled.img`
   height: 25rem;
@@ -31,10 +32,7 @@ const Home: NextPage = () => {
     <div>
       <Layout>
         <>
-          <HeaderImage
-            src={require("../public/images/kansikuva.jpg")}
-            alt="kansikuva"
-          />
+          <HeaderImage src={Kansikuva} alt="kansikuva" />
 
           <Lift>
             <h2>Pii-Klubi - juhlatila kaikkiin tarpeisiin</h2>

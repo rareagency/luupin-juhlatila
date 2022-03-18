@@ -10,7 +10,7 @@ const InfoContainer = styled.div`
   justify-items: center;
   padding: 2rem;
   button {
-    text-aling: center;
+    text-align: center;
   }
   @media (max-width: 950px) {
     display: flex;

@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import styled from "styled-components";
 import Layout from "../../components/layout";
+import Leximus from "../../public/images/leximus.jpg";
 
 const BaseGrid = styled.div`
   height: 100vh;
@@ -40,7 +41,7 @@ export default function SideImageLayout({ children }: Props) {
   return (
     <Layout>
       <BaseGrid>
-        <Img src={require("../../public/images/leximus.jpg")} alt="leximus" />
+        <Img src={Leximus} alt="leximus" />
         <Text>{children}</Text>
       </BaseGrid>
     </Layout>

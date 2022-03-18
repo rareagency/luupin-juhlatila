@@ -5,6 +5,9 @@ import Layout from "../../components/layout";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import Link from "next/link";
+import Kansikuva from "../../public/images/kansikuva.jpg";
+import Sauna from "../../public/images/sauna.jpg";
+import Keittio from "../../public/images/keittiö.jpg";
 
 const BaseGrid = styled.div`
   display: grid;
@@ -75,22 +78,13 @@ const Tilat: NextPage = () => {
   return (
     <Layout>
       <BaseGrid>
-        <HeaderImage
-          src={require("../../public/images/kansikuva.jpg")}
-          alt="kansikuva"
-        />
+        <HeaderImage src={Kansikuva} alt="kansikuva" />
         <FirstCarousel>
           <div>
-            <CarouselImage
-              src={require("../../public/images/sauna.jpg")}
-              alt="sauna"
-            />
+            <CarouselImage src={Sauna} alt="sauna" />
           </div>
           <div>
-            <CarouselImage
-              src={require("../../public/images/kansikuva.jpg")}
-              alt="kansikuva"
-            />
+            <CarouselImage src={Kansikuva} alt="kansikuva" />
           </div>
         </FirstCarousel>
         <FirstText>
@@ -113,16 +107,10 @@ const Tilat: NextPage = () => {
         </FirstText>
         <SecondCarousel>
           <div>
-            <CarouselImage
-              src={require("../../public/images/keittiö.jpg")}
-              alt="keittiö"
-            />
+            <CarouselImage src={Keittio} alt="keittiö" />
           </div>
           <div>
-            <CarouselImage
-              src={require("../../public/images/kansikuva.jpg")}
-              alt="kansikuva"
-            />
+            <CarouselImage src={Kansikuva} alt="kansikuva" />
           </div>
         </SecondCarousel>
         <SecondText>

@@ -19,18 +19,16 @@ const NavbarContainer = styled.div`
   }
 `;
 
-const NavItem = styled.a`
+const NavItem = styled.a<NavItemProps>`
   margin-right: 2rem;
   :last-child {
     margin: 0;
   }
-  border-bottom: ${(p: NavItemProps) =>
-    p.isActive ? "0.15rem #474747 solid" : "none"};
+  border-bottom: ${(p) => (p.isActive ? "0.15rem #474747 solid" : "none")};
 
   :hover {
     color: #8980f1;
-    border-bottom: ${(p: NavItemProps) =>
-      p.isActive ? "0.15rem #8980f1 solid" : "none"};
+    border-bottom: ${(p) => (p.isActive ? "0.15rem #8980f1 solid" : "none")};
   }
 
   @media (max-width: 950px) {
@@ -40,8 +38,7 @@ const NavItem = styled.a`
     }
     padding-top: 3rem;
     font-size: 2rem;
-    border-bottom: ${(p: NavItemProps) =>
-      p.isActive ? "0.15rem #f7f7fe solid" : "none"};
+    border-bottom: ${(p) => (p.isActive ? "0.15rem #f7f7fe solid" : "none")};
   }
   @media (max-width: 600px) {
     padding-top: 2rem;
