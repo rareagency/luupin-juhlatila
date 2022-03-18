@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FacebookSquare, InstagramAlt } from "@styled-icons/boxicons-logos";
+import rareLogo from "../../public/images/rare-logo.png";
 
 const FooterContainer = styled.header`
   background: #474747;
@@ -76,7 +77,7 @@ const Footer: React.FC = () => {
           Puhelin yms.
         </div>
         <a href="https://www.rare.fi" target="_blank" rel="noreferrer">
-          <Logo src={require("../../public/images/rare-logo.png")} alt="RARE" />
+          <Logo src={rareLogo} alt="RARE" />
         </a>
       </FooterContent>
     </FooterContainer>
