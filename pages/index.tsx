@@ -37,12 +37,11 @@ const Home: NextPage = () => {
           />
 
           <Lift>
-            <h2>&pi; -KLUBI - BEST THING EVER</h2>
+            <h2>Pii-Klubi - juhlatila kaikkiin tarpeisiin</h2>
             <p>
-              Varaa tästä. Super hyvät diilit! Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Donec ornare libero vitae mauris
-              ornare, et suscipit neque mattis. Donec mollis sapien in neque
-              sodales congue. Donec dictum id lectus ac malesuada.
+              Pii-Klubi on aivan Tampereen keskustan tuntumassa sijaitseva hyvin
+              varusteltu juhlatila. Tilasta löytyy avara juhlasali sekä upea
+              sauna!
             </p>
             <Link href="/tilat" passHref>
               <button>Tutustu tiloihin</button>

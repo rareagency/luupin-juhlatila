@@ -94,12 +94,18 @@ const Tilat: NextPage = () => {
           </div>
         </FirstCarousel>
         <FirstText>
-          <h3>Moternit juhlatilat</h3>
           <p>
-            Hyvät kaikkiin opiskelija ja ei opiskelija paartyihin. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit. Donec ornare libero
-            vitae mauris ornare, et suscipit neque mattis. Donec mollis sapien
-            in neque sodales congue. Donec dictum id lectus ac malesuada.
+            Suuri 270m2:n juhlatila mahdollistaa monenlaisten tapahtumien
+            järjestämisen. Avaran juhlasalin lisäksi tilassa on käytettävissä
+            parvi. Erillinen sauna- ja suihkutila on suuri ja tunnelmallinen.
+            Saunan yhteydessä on pukeutumistila, josta löytyy myös kaapit
+            tavaroiden säilyttämistä varten. Pii-Klubille mahtuu seisten 200
+            henkilöä ja pöytäkattaukset on mahdollista tehdä jopa 120 hengelle.
+            Juhlasalista ja parvelta löytyy sohvia vapaampaan oleskeluun.
+          </p>
+          <p>
+            Tilassa ei ole anniskeluoikeuksia. Tilan siivoaminen ei sisälly
+            vuokrahintaan.
           </p>
           <Link href="/varaus" passHref>
             <button>Varaa tila</button>
@@ -121,13 +127,14 @@ const Tilat: NextPage = () => {
         </SecondCarousel>
         <SecondText>
           <h2>Varustelu</h2>
-          <p>
-            Tällästä kaikkea löytyy teittin käyttöön: <br />
-            - Taittopöytiä x määrä <br />
-            - Tuoleja Aatioita x määrä <br />
-            - Keittiö <br />
-            - jne <br />
-          </p>
+          <p>Vuokraajan käytössä on mm.</p>
+          <ul>
+            <li>Pöytiä 19 kpl</li>
+            <li>Tuoleja 120 kpl</li>
+            <li>Sohvatilaa n. 30 hengelle</li>
+            <li>Runsaasti jääkaappitilaa</li>
+            <li>Siivousvälineet </li>
+          </ul>
         </SecondText>
       </BaseGrid>
     </Layout>

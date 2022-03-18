@@ -50,10 +50,9 @@ const FrontpageInfo: React.FC = () => {
     <InfoContainer>
       <div>
         <p>
-          Järjestä juhlat meillä täällä on kaikki mitä tarvitset! Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Donec ornare libero vitae
-          mauris ornare, et suscipit neque mattis. Donec mollis sapien in neque
-          sodales congue. Donec dictum id lectus ac malesuada.
+          Monipuolinen juhlatila tarjoaa mahdollisuuden järjestää erilaisia
+          tilaisuuksia ja tapahtumia sekä järjestöille, yrityksille että
+          yksityishenkilöille.
         </p>
         <Link href="/varaus" passHref>
           <button>Varaa tila</button>
