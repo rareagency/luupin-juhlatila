@@ -27,9 +27,17 @@ const SocialMedia = styled.header`
 const FooterContent = styled.div`
   display: flex;
   color: #f8f7fe;
-  padding: 3rem 3rem;
+  padding: 3rem 3.5rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: flex-start;
+    a {
+      margin-top: 2rem;
+    }
+  }
 `;
 
 const Facebook = styled(FacebookSquare)`
@@ -70,11 +78,11 @@ const Footer: React.FC = () => {
       </SocialMedia>
       <FooterContent>
         <div>
-          Osoite Y-tunnus
-          <br />
-          Sähköposti
-          <br />
-          Puhelin yms.
+          <p>
+            Yliopistonkatu 58b <br />
+            33100 Tampere
+          </p>
+          <p>toimitila@luuppi.fi</p>
         </div>
         <a href="https://www.rare.fi" target="_blank" rel="noreferrer">
           <Logo src={rareLogo} alt="RARE" />
