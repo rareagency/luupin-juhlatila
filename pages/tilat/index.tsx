@@ -48,6 +48,9 @@ const StyledCarousel = styled(Carousel)`
   .control-arrow {
     height: 100%;
   }
+  .dot {
+    box-shadow: 2px 2px 3px rgb(0 0 0 / 50%) !important;
+  }
 `;
 
 const FirstCarousel = styled(StyledCarousel)`

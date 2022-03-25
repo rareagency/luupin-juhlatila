@@ -42,6 +42,10 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 600;
     font-size: 1rem;
     margin: 2rem auto;
+    :hover{
+      cursor: pointer;
+      background: #5c5c5c;
+    }
   }
   a {
     color: inherit;
