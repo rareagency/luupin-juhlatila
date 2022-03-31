@@ -6,13 +6,15 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import Link from "next/link";
 import Kansikuva from "../../public/images/kansikuva.jpg";
+import Leximus from "../../public/images/leximus.jpg";
+/* 
 import Sauna from "../../public/images/sauna.jpg";
-import Sali from "../../public/images/sali.jpg"; /* 
+import Sali from "../../public/images/sali.jpg"; 
 import Parvi1 from "../../public/images/parvi1.jpg";
 import Parvi2 from "../../public/images/parvi2.jpg";
 import Pesutilat1 from "../../public/images/pesutilat1.jpg";
-import Pesutilat2 from "../../public/images/pesutilat2.jpg"; */
-import Pukuhuone from "../../public/images/pukuhuone.jpg";
+import Pesutilat2 from "../../public/images/pesutilat2.jpg"; 
+import Pukuhuone from "../../public/images/pukuhuone.jpg";*/
 
 const BaseGrid = styled.div`
   display: grid;
@@ -92,10 +94,10 @@ const Tilat: NextPage = () => {
         <HeaderImage src={Kansikuva} alt="kansikuva" />
         <FirstCarousel>
           <div>
-            <CarouselImage src={Sali} alt="sauna" />
+            <CarouselImage src={Leximus} alt="Sali" />
           </div>
           <div>
-            <CarouselImage src={Sali} alt="sauna" />
+            <CarouselImage src={Leximus} alt="Sali" />
           </div>
           {/*  <div>
             <CarouselImage src={Parvi1} alt="kansikuva" />
@@ -124,7 +126,7 @@ const Tilat: NextPage = () => {
         </FirstText>
         <SecondCarousel>
           <div>
-            <CarouselImage src={Sauna} alt="keittiö" />
+            <CarouselImage src={Leximus} alt="Sauna" />
           </div>
           {/*  <div>
             <CarouselImage src={Pesutilat1} alt="kansikuva" />
@@ -133,7 +135,7 @@ const Tilat: NextPage = () => {
             <CarouselImage src={Pesutilat2} alt="kansikuva" />
           </div> */}
           <div>
-            <CarouselImage src={Pukuhuone} alt="kansikuva" />
+            <CarouselImage src={Leximus} alt="Pukuhuone" />
           </div>
         </SecondCarousel>
         <SecondText>
