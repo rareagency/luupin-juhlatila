@@ -94,6 +94,9 @@ const Tilat: NextPage = () => {
           <div>
             <CarouselImage src={Sali} alt="sauna" />
           </div>
+          <div>
+            <CarouselImage src={Sali} alt="sauna" />
+          </div>
           {/*  <div>
             <CarouselImage src={Parvi1} alt="kansikuva" />
           </div>
