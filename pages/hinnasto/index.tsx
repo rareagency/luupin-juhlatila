@@ -1,29 +1,43 @@
 import type { NextPage } from "next";
+import styled from "styled-components";
 import SideImageLayout from "../../components/sideImageLayout";
+
+const Overline = styled.span`
+  text-decoration: line-through;
+`;
 
 const Hinnasto: NextPage = () => {
   return (
     <SideImageLayout>
       <div>
-        <h2>Vuokrahinnasto</h2>
+        <h2>Hinnasto</h2>
         <p>
-          su-to 500€ <br />
-          pe-la 750€ <br />
+          Toistaiseksi hinnoista saa 50€ alennuksen puuttuvan keittiön vuoksi.
+        </p>
+        <p>
+          Yritykset: <br />
+          Su, To: <Overline>520€</Overline> 480€
           <br />
-          Opiskelijat: <br />
-          su-to 460€ <br />
-          pe-la 700€
+          Pe, La: <Overline>620€</Overline> 580€
+        </p>
+        <p>
+          Ainejärjestöt/killat:
           <br />
+          Su, To: <Overline>500€</Overline> 450€
           <br />
-          Ainejärjestöt: <br />
-          su-to 440€ <br />
-          pe-la 600€ <br />
+          Pe, La: <Overline>580€</Overline> 530€
+        </p>
+        <p>
+          Luuppilaiset:
           <br />
-          Sesonkiaikana 1.11-31.12. viikonloppuisin vuokrahinnastoon lisätään 50
-          euron lisä. Pyhäpäiviä edeltävät päivät hinnoitellaan
-          viikonloppuhintojen mukaisesti. Kaikki hinnat sis. ALV24 %.
-          Vuokrahintaan sisältyy siivous. Vuokra-aika 17–5:30. Päivävuokrauksia
-          varten kysy tarjousta sähköpostitse osoitteesta tilat@luuppi.fi.
+          Su, To: <Overline>480€</Overline> 430€
+          <br />
+          Pe, La: <Overline>550€</Overline> 500€
+        </p>
+        <p>
+          Maanantaisin, tiistaisin ja keskiviikkoisin tila ei ole
+          oletusarvoisesti varattavissa. Voit kuitenkin kysellä mahdollisuuksia{" "}
+          <a href="mailto: toimitila@luuppi.fi">toimitila@luuppi.fi!</a>
         </p>
       </div>
     </SideImageLayout>

@@ -20,6 +20,18 @@ const GlobalStyle = createGlobalStyle`
     @media (min-width: 2000px) {
       font-size: 1.2rem;
     }
+    @media (min-width: 2500px) {
+      font-size: 1.3rem;
+    }
+    @media (min-width: 3000px) {
+      font-size: 1.4rem;
+    }
+    @media (min-width: 3500px) {
+      font-size: 1.5rem;
+    }
+    @media (min-width: 4000px) {
+      font-size: 1.6rem;
+    }
   }
   #__next {
     height: 100%;
@@ -50,6 +62,11 @@ const GlobalStyle = createGlobalStyle`
   a {
     color: inherit;
     text-decoration: none;
+    font-weight: 500;
+    :hover{
+      cursor: pointer;
+      color: #8980f1;
+    }
   }
   * {
     box-sizing: border-box;
@@ -81,11 +98,10 @@ export default function Layout({ children }: Props) {
         <title>Pii-Klubi</title>
         <meta
           name="description"
-          content="Pii-Klubi, juhla- ja saunatila Tampereen keskustassa"
+          content="Pii-Klubi, juhla- ja saunatila Tampereen keskustassa."
         />
         <link rel="icon" href="/favicon.ico" />
         {/* Fonts: */}
-        <link rel="stylesheet" href="https://use.typekit.net/mdv6ewv.css" />
         <link rel="stylesheet" href="https://use.typekit.net/mdv6ewv.css" />
       </Head>
       <LayoutContainer>

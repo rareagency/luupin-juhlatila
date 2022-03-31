@@ -5,6 +5,7 @@ interface Props {
   className?: string;
 }
 
+//For styled components
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: any) {
     const sheet = new ServerStyleSheet();

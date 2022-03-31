@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import styled from "styled-components";
 import Layout from "../../components/layout";
-import Leximus from "../../public/images/leximus.jpg";
+import Kansikuva from "../../public/images/kansikuva.jpg";
 
 const BaseGrid = styled.div`
   height: 100vh;
@@ -30,7 +30,13 @@ const Img = styled.img`
 
 const Text = styled.div`
   grid-area: main;
-  margin: 0 3rem;
+  margin: 0 3rem 3rem 3rem;
+  @media (max-width: 750px) {
+    margin: 0 2rem 3rem 2rem;
+  }
+  @media (max-width: 500px) {
+    margin: 0 1rem 2rem 1rem;
+  }
 `;
 
 type Props = {
@@ -41,7 +47,7 @@ export default function SideImageLayout({ children }: Props) {
   return (
     <Layout>
       <BaseGrid>
-        <Img src={Leximus} alt="leximus" />
+        <Img src={Kansikuva} alt="Kansikuva" />
         <Text>{children}</Text>
       </BaseGrid>
     </Layout>

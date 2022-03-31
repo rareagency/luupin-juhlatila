@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { FacebookSquare, InstagramAlt } from "@styled-icons/boxicons-logos";
-import rareLogo from "../../public/images/rare-logo.png";
+import RareLogo from "../../public/images/rare-logo.png";
+import PiiLogo from "../../public/images/logo_val.png";
 
 const FooterContainer = styled.header`
   background: #474747;
@@ -28,15 +29,31 @@ const FooterContent = styled.div`
   display: flex;
   color: #f8f7fe;
   padding: 3rem 3.5rem;
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 500px) {
+  @media (max-width: 750px) {
     flex-direction: column;
     align-items: flex-start;
     a {
       margin-top: 2rem;
     }
+  }
+`;
+
+const LeftSide = styled.div`
+  display: flex;
+  align-items: center;
+  @media (max-width: 750px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+`;
+
+const Info = styled.div`
+  padding-left: 2rem;
+  @media (max-width: 750px) {
+    padding-left: 0;
+    padding: 1rem 0;
   }
 `;
 
@@ -52,8 +69,13 @@ const Instagram = styled(InstagramAlt)`
   width: auto;
 `;
 
-const Logo = styled.img`
+const Rare = styled.img`
   height: 2rem;
+  width: auto;
+`;
+
+const Logo = styled.img`
+  height: 7rem;
   width: auto;
 `;
 
@@ -77,15 +99,25 @@ const Footer: React.FC = () => {
         </a>
       </SocialMedia>
       <FooterContent>
-        <div>
-          <p>
-            Yliopistonkatu 58b <br />
-            33100 Tampere
-          </p>
-          <p>toimitila@luuppi.fi</p>
-        </div>
+        <LeftSide>
+          <Logo src={PiiLogo} alt="Pii-klubi" />
+          <Info>
+            <p>
+              Yliopistonkatu 58b <br />
+              33100 Tampere
+            </p>
+            <p>
+              <a href="mailto: toimitila@luuppi.fi">toimitila@luuppi.fi</a>
+            </p>
+            <p>
+              <a href="https://www.luuppi.fi" target="_blank" rel="noreferrer">
+                www.luuppi.fi
+              </a>
+            </p>
+          </Info>
+        </LeftSide>
         <a href="https://www.rare.fi" target="_blank" rel="noreferrer">
-          <Logo src={rareLogo} alt="RARE" />
+          <Rare src={RareLogo} alt="RARE" />
         </a>
       </FooterContent>
     </FooterContainer>

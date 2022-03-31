@@ -7,12 +7,17 @@ import { Carousel } from "react-responsive-carousel";
 import Link from "next/link";
 import Kansikuva from "../../public/images/kansikuva.jpg";
 import Sauna from "../../public/images/sauna.jpg";
-import Keittio from "../../public/images/keittiö.jpg";
+import Sali from "../../public/images/sali.jpg";
+import Parvi1 from "../../public/images/parvi1.jpg";
+import Parvi2 from "../../public/images/parvi2.jpg";
+import Pesutilat1 from "../../public/images/pesutilat1.jpg";
+import Pesutilat2 from "../../public/images/pesutilat2.jpg";
+import Pukuhuone from "../../public/images/pukuhuone.jpg";
 
 const BaseGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 25rem 30rem 30rem;
+  grid-template-rows: 25rem 33rem 33rem;
   @media (max-width: 950px) {
     display: flex;
     flex-direction: column;
@@ -31,9 +36,12 @@ const HeaderImage = styled.img`
 `;
 
 const CarouselImage = styled.img`
-  height: 30rem;
+  height: 33rem;
   width: 100%;
   object-fit: cover;
+  @media (max-width: 950px) {
+    height: 25rem;
+  }
   @media (max-width: 600px) {
     height: 20rem;
   }
@@ -84,10 +92,13 @@ const Tilat: NextPage = () => {
         <HeaderImage src={Kansikuva} alt="kansikuva" />
         <FirstCarousel>
           <div>
-            <CarouselImage src={Sauna} alt="sauna" />
+            <CarouselImage src={Sali} alt="sauna" />
           </div>
           <div>
-            <CarouselImage src={Kansikuva} alt="kansikuva" />
+            <CarouselImage src={Parvi1} alt="kansikuva" />
+          </div>
+          <div>
+            <CarouselImage src={Parvi2} alt="kansikuva" />
           </div>
         </FirstCarousel>
         <FirstText>
@@ -110,10 +121,16 @@ const Tilat: NextPage = () => {
         </FirstText>
         <SecondCarousel>
           <div>
-            <CarouselImage src={Keittio} alt="keittiö" />
+            <CarouselImage src={Sauna} alt="keittiö" />
           </div>
           <div>
-            <CarouselImage src={Kansikuva} alt="kansikuva" />
+            <CarouselImage src={Pesutilat1} alt="kansikuva" />
+          </div>
+          <div>
+            <CarouselImage src={Pesutilat2} alt="kansikuva" />
+          </div>
+          <div>
+            <CarouselImage src={Pukuhuone} alt="kansikuva" />
           </div>
         </SecondCarousel>
         <SecondText>
