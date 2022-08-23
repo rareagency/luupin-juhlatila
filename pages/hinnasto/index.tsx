@@ -12,27 +12,22 @@ const Hinnasto: NextPage = () => {
       <div>
         <h2>Hinnasto</h2>
         <p>
-          Toistaiseksi hinnoista saa 50€ alennuksen puuttuvan keittiön vuoksi.
+          Yritykset, yksityishenkilöt: <br />
+          To, Su: 600€
+          <br />
+          Pe, La: 700€
         </p>
         <p>
-          Yritykset: <br />
-          Su, To: <Overline>520€</Overline> 480€
+          Ainejärjestöt/killat, opiskelijat:
           <br />
-          Pe, La: <Overline>620€</Overline> 580€
-        </p>
-        <p>
-          Ainejärjestöt/killat:
+          To, Su: 550€
           <br />
-          Su, To: <Overline>500€</Overline> 450€
-          <br />
-          Pe, La: <Overline>580€</Overline> 530€
+          Pe, La: 580€
         </p>
         <p>
           Luuppilaiset:
           <br />
-          Su, To: <Overline>480€</Overline> 430€
-          <br />
-          Pe, La: <Overline>550€</Overline> 500€
+          To - Su: 350€
         </p>
         <p>
           Maanantaisin, tiistaisin ja keskiviikkoisin tila ei ole
