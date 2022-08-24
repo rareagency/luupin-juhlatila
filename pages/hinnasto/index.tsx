@@ -30,6 +30,7 @@ const Hinnasto: NextPage = () => {
           To - Su: 350€
         </p>
         <p>
+          Hintoihin lisätään sesonkilisä 100€ marras- ja joulukuussa.
           Maanantaisin, tiistaisin ja keskiviikkoisin tila ei ole
           oletusarvoisesti varattavissa. Voit kuitenkin kysellä mahdollisuuksia{" "}
           <a href="mailto: toimitila@luuppi.fi">toimitila@luuppi.fi!</a>
