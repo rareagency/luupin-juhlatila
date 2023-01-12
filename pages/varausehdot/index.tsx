@@ -30,22 +30,22 @@ const Hinnasto: NextPage = () => {
         <h3>2. Varausehdot</h3>
         <ul>
           <li>
-            Vuokra-aika to-pe alkaa aikaisintaan 17.00 ja päättyy klo 02:00,
+            Vuokra-aika to-pe alkaa aikaisintaan 17.00 ja päättyy klo 04:00,
             ellei erikseen muuta ole sovittu.{" "}
           </li>
           <li>
-            Perusvuokra-aika on la-su 10h ja se alkaa aikaisintaan 12:00.
-            Päättymisajankohta määrittyy aloitusajankohdan mukaan, ellei
-            erikseen muuta ole sovittu.{" "}
+            Perusvuokra-aika on la-su enintään 12h ja se alkaa aikaisintaan 12:00 ja
+            päättyy viimeistään 06.00. Päättymisajankohta määrittyy
+            aloitusajankohdan mukaan, ellei erikseen muuta ole sovittu.{" "}
           </li>
           <li>
             Varauksen katsotaan alkavan siitä hetkestä kun avaimet luovutetaan
-            vuokraajalle. Lisätunnit maksavat 50€/2h.
+            vuokraajalle. Lisätunnit maksavat 50€/4h.{" "}
           </li>
           <li>
-            Tilavuokraukseen sisältyvät tilojen käyttö, tuolit ja pöydät,
-            keittiön käyttö sekä astiastot, wc-tilat joiden paperi
-            täydennyksistä huolehtii vuokranantaja.{" "}
+            Tilavuokraukseen sisältyvät tilojen käyttö, tuolit ja pöydät, keittiön käyttö
+            sekä astiastot, wc-tilat joiden paperi täydennyksistä huolehtii
+            vuokranantaja.{" "}
           </li>
         </ul>
 
@@ -55,9 +55,9 @@ const Hinnasto: NextPage = () => {
           <li>
             Varauksen voi perua maksutta 2 viikkoa ennen varauksen ajankohtaa.
             Alle kaksi viikkoa ennen peruutetuista varauksista peritään puolet
-            laskusta ja alle viikkoa ennen peruutetuista varauksista peritään
-            täysi hinta. Varausta voi siirtää maksutta viimeistään 2 viikkoa
-            ennen varattua ajankohtaa.
+            laskusta ja alle viikkoa ennen peruutetuista varauksista peritään täysi
+            hinta. Varausta voi siirtää maksutta viimeistään 2 viikkoa ennen varattua
+            ajankohtaa.
           </li>
           <li>
             Mahdollinen rikki mennyt tai hävinnyt kalusto laskutetaan
@@ -98,16 +98,16 @@ const Hinnasto: NextPage = () => {
             Tarkemmat siivousohjeet löytyvät vuokraajan kansiosta.
           </li>
           <li>
-            Veloitus siivouksen laiminlyönnistä on 200,00 €. Tilan vaatiessa
-            suurta siivousta lisätään tähän 30€/h siivouskustannus.
+            Veloitus siivouksen laiminlyönnistä on 200,00 €. Ilmoittamatta jätetyt
+            lattialla olevat lasinsirpaleet ovat aina siivouslaskun peruste. Tilan
+            vaatiessa suurta siivousta lisätään tähän 30€/h siivouskustannus.
           </li>
         </ul>
 
         <h3>6. Säännöt ja turvallisuus</h3>
         <ul>
-          <li>Juhlatilassa saa yhtäaikaisesti olla korkeintaan 200 henkeä.</li>
           <li>
-            Kello 22:00 jälkeen tilasta ei saa kantautua merkittävää melua ulos.
+            Juhlatilassa saa yhtäaikaisesti olla korkeintaan 200 henkeä.
           </li>
           <li>
             Vuokraaja on velvollinen perehtymään laitteiden käyttöön annettuihin
@@ -136,7 +136,9 @@ const Hinnasto: NextPage = () => {
             sallittu vain sille varatulla alueella sisäpihalla. Ulko-oven
             vieressä tupakointi on jyrkästi kielletty.
           </li>
-          <li>Rappukäytävässä asiaton oleskelu on ehdottomasti kielletty.</li>
+          <li>
+            Rappukäytävässä asiaton oleskelu on ehdottomasti kielletty.
+          </li>
           <li>
             Vuokralainen on vastuussa siitä, että kaikki tilaisuuteen
             osallistuvat henkilöt noudattavat vuokrausehtoja.
@@ -150,20 +152,19 @@ const Hinnasto: NextPage = () => {
             alkaessa. Hävinneestä avaimesta perimme 100 €:n korvauksen.{" "}
           </li>
           <li>
-            Vuokralainen on velvollinen korvaamaan vuokrauksen yhteydessä
-            tiloille, kiinteistön omistajalle ja/tai kolmannelle osapuolelle
-            aiheutetut vahingot. Vuokralainen on vastuussa myös vuokra-ajan
-            jälkeen syntyneistä tai ilmenevistä vahingoista, jotka ovat
-            aiheutuneet tiloissa olleiden toiminnasta tai huolimattomuudesta.
+            Vuokralainen on velvollinen korvaamaan vuokrauksen yhteydessä tiloille,
+            kiinteistön omistajalle ja/tai kolmannelle osapuolelle aiheutetut vahingot.
+            Vuokralainen on vastuussa myös vuokra-ajan jälkeen syntyneistä tai
+            ilmenevistä vahingoista, jotka ovat aiheutuneet tiloissa olleiden
+            toiminnasta tai huolimattomuudesta.
           </li>
           <li>
-            Mikäli tilassa on tapahtuman jäljiltä lisäsiivouksen tai
-            remontoimisen tarvetta sattuneiden vahinkojen tai ilkivallan vuoksi
-            (esim. oksennus, tahrat seinillä, ect.), vuokranantaja laskuttaa
-            nämä erikseen tilaisuuden jälkeen. Vuokralainen on velvollinen
-            ilmoittamaan rikki menneistä astioista, muusta hajonneesta
-            irtaimistosta tai kiinteistölle aiheutuneista haavereista.
-            Rikkimenneistä tai kadonneista astioista ja ruokailuvälineistä
+            Mikäli tilassa on tapahtuman jäljiltä lisäsiivouksen tai remontoimisen
+            tarvetta sattuneiden vahinkojen tai ilkivallan vuoksi (esim. oksennus,
+            tahrat seinillä, etc.), vuokranantaja laskuttaa nämä erikseen tilaisuuden
+            jälkeen. Vuokralainen on velvollinen ilmoittamaan rikki menneistä
+            astioista, muusta hajonneesta irtaimistosta tai kiinteistölle aiheutuneista
+            haavereista. Rikkimenneistä tai kadonneista astioista ja ruokailuvälineistä
             veloitamme jälleenhankintahinnan mukaisesti.
           </li>
           <li>
@@ -199,8 +200,8 @@ const Hinnasto: NextPage = () => {
         <h3>10. Sopimuksen voimaantulo</h3>
         <ul>
           <li>
-            Sopimus astuu voimaan vuokraajan maksettua tilan varausmaksu ja
-            sitoo molempia sopimusosapuolia.
+            Sopimus astuu voimaan vuokraajan varauspyynnöstä ja sitoo molempia
+            sopimusosapuolia.
           </li>
         </ul>
       </Text>
