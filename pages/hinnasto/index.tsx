@@ -22,7 +22,7 @@ const Hinnasto: NextPage = () => {
           <br />
           To, Su: 570€
           <br />
-          Pe, La: 6000€
+          Pe, La: 600€
         </p>
         <p>
           Luuppilaiset:
