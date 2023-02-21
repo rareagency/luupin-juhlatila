@@ -13,16 +13,16 @@ const Hinnasto: NextPage = () => {
         <h2>Hinnasto</h2>
         <p>
           Yritykset, yksityishenkilöt: <br />
-          To, Su: 600€
+          To, Su: 620€
           <br />
-          Pe, La: 700€
+          Pe, La: 720€
         </p>
         <p>
           Ainejärjestöt/killat, opiskelijat:
           <br />
-          To, Su: 550€
+          To, Su: 570€
           <br />
-          Pe, La: 580€
+          Pe, La: 6000€
         </p>
         <p>
           Luuppilaiset:
@@ -30,9 +30,12 @@ const Hinnasto: NextPage = () => {
           To - Su: 350€
         </p>
         <p>
-          Hintoihin lisätään sesonkilisä 100€ marras- ja joulukuussa.
+          Hintoihin lisätään sesonkilisä 100€ marras- ja joulukuussa. <br />
           Maanantaisin, tiistaisin ja keskiviikkoisin tila ei ole
-          oletusarvoisesti varattavissa. Voit kuitenkin kysellä mahdollisuuksia{" "}
+          oletusarvoisesti varattavissa. <br />
+          Huom! Wapun aikana (13.4. - 1.5.) 
+          tila on varattavissa viikon jokaisena päivänä. <br />
+          Voit kuitenkin kysellä mahdollisuuksia{" "}
           <a href="mailto: toimitila@luuppi.fi">toimitila@luuppi.fi!</a>
         </p>
       </div>
