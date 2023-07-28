@@ -48,6 +48,11 @@ const Varaus: NextPage = () => {
               <li>Varaajan laskutusosoite sekä sähköposti</li>
               <li>Yrityksiltä ja yhdistyksiltä y-tunnus</li>
             </ul>
+            <p>
+            Loppusiivouksen voit tilata yhteistyökumppaniltamme hintaan 120€. 
+            Lisätietoja ja varaus sähköpostilla <a href="mailto: info@katajama.fi">info@katajama.fi</a>. Varaukset tehtävä 
+            mielellään 2vko ennen tilaisuutta.
+            </p>
           </div>
           {process.browser && (
             <CalendarWrapper>
