@@ -33,24 +33,11 @@ const Varaus: NextPage = () => {
         <ContentWrapper>
           <div>
             <p>
-              Lähetä varaustiedustelusi osoitteeseen{" "}
-              <a href="mailto: toimitila@luuppi.fi">toimitila@luuppi.fi</a>!
-              Muista liittää seuraavat tiedot tiedusteluusi:
+            Alustavan varauksen voit tehdä <a href="https://docs.google.com/forms/d/e/1FAIpQLScoZGF-itX2lWG6HJFpD33blNMHZCCeC3GtM6LWs9FCUpsT_Q/viewform">tällä lomakeella</a> 
             </p>
-            <ul>
-              <li>Päivämäärä sekä kellonaika</li>
-              <li>
-                Varaajan yhteystiedot
-                <ul>
-                  <li>Postiosoite, postinumero ja toimipaikka</li>
-                </ul>
-              </li>
-              <li>Varaajan laskutusosoite sekä sähköposti</li>
-              <li>Yrityksiltä ja yhdistyksiltä y-tunnus</li>
-            </ul>
             <p>
             Loppusiivouksen voit tilata yhteistyökumppaniltamme hintaan 120€. 
-            Lisätietoja ja varaus sähköpostilla <a href="mailto: info@katajama.fi">info@katajama.fi</a>. Varaukset tehtävä 
+            Lisätietoja ja varaus sähköpostilla <a href="mailto: info@juniperlux.fi">info@juniperlux.fi</a>. Varaukset tehtävä 
             mielellään 2vko ennen tilaisuutta.
             </p>
           </div>
